@@ -1,0 +1,19 @@
+{
+  "name": "websiteScrapper",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Priyank Jain",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "request": "~2.33.0",
+    "cheerio": "~0.13.1",
+    "path": "~0.4.9",
+    "node-fs": "~0.1.7",
+    "deferred": "~0.6.8",
+    "mime-of": "~0.1.0"
+  }
+}
