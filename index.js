@@ -13,7 +13,7 @@ if (utils.isValidURL(url) == false) {
 }
 console.log("Getting Page : " + url);
 var receivedResponseCallback = function (err, resp, body) {
-    if (!error && response.statusCode == 200) {
+    if (!err && resp.statusCode == 200) {
 
 
         scrapper.saveContentToDisk(body, "index.html", url);
@@ -44,7 +44,7 @@ var receivedResponseCallback = function (err, resp, body) {
             scrapper.saveLinkToDisk(pathDownloaded, url);
         });
     } else {
-        console.log("Unaable to download, received status code as " + response.statusCode + ", Error received: " + error);
+        console.log("Unaable to download, received status code as " + resp.statusCode + ", Error received: " + err);
     }
 }
 var body = scrapper.getURLBody(url, receivedResponseCallback);
